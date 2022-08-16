@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.chart-container {
+  display: flex;
+}
+
+.chart {
+  height: 50%;
+  width: 50%;
 }

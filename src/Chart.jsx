@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
@@ -6,11 +5,11 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ['General Motors', 'Circut City', 'Pfizer', 'Volkswagon', 'Bank of America', 'Caterpiller'],
+  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
   datasets: [
     {
       label: '# of Votes',
-      data: [104, 123, 431, 1254, 344],
+      data: [12, 19, 3, 5, 2, 3],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -32,15 +31,6 @@ export const data = {
   ],
 };
 
-function App() {
-  return (
-    <div className='chart-container'>
-      <div className='chart'>
-        <Doughnut data={data} />
-      </div>
-    </div>
-  )
+export function App() {
+  return <Doughnut data={data} />;
 }
-
-export default App;
-
